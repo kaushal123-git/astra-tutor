@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+@layer base {
+  body {
+    @apply font-serif bg-[#f5f5f0] text-[#1a1a1a];
+  }
+}
+
+.olive-button {
+  background-color: #5A5A40;
+  color: white;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.olive-button:hover {
+  background-color: #4A4A30;
+  transform: translateY(-1px);
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.markdown-body h1 { @apply text-3xl font-bold mb-4; }
+.markdown-body h2 { @apply text-2xl font-semibold mb-3 mt-6; }
+.markdown-body p { @apply mb-4 leading-relaxed; }
+.markdown-body ul { @apply list-disc pl-6 mb-4; }
+.markdown-body li { @apply mb-2; }
+.markdown-body strong { @apply font-bold; }
